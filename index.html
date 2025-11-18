@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sample</title>
+<link rel="stylesheet" href="css/style-pc.css">
+<link rel="stylesheet" href="css/style-tb.css" media="only screen and (min-width:640px) and (max-width:979px)">
+<link rel="stylesheet" href="css/style-sp.css" media="only screen and (max-width:639px)">
+<link rel="stylesheet" href="css/parallax.css">
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.10.1.min.js'></script>
+<script type="text/javascript">
+function slideSwitch() {
+var $active = $('#slideshow IMG.active');
+if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+var $next =  $active.next().length ? $active.next()
+: $('#slideshow IMG:first');
+$active.addClass('last-active');
+$next.css({opacity: 0.0})
+.addClass('active')
+.animate({opacity: 1.0}, 1000, function() {
+$active.removeClass('active last-active');
+});
+}
+
+$(function() {
+setInterval( "slideSwitch()", 5000 );
+});
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+  <article>
+    <section id="top" class="content">
+      <h2><img src="images/logo.png" alt="women"></h2>
+      <div class="text_area">
+        <p>When we meet some women,<br>
+          <br>
+          we always wolud like to see them.</p>
+        <img src="images/women.png">
+        <p>A woman is a female human. <br>
+          <br>
+          The term woman is usually reserved for an adult, <br>
+          <br>
+          with the term girl being the usual term for a female child or adolescent. <br>
+          <br>
+        </p>
+      </div>
+    </section>
+    <section id="first" class="content"> </section>
+    <section id="second" class="content"> </section>
+    <section id="third" class="content"> </section>
+    <section id="theend" class="content">
+      <div class="text_area">
+        <h2>Thank you for your time.<br>
+          <br>
+          Who do you like it??</h2>
+      </div>
+    </section>
+  </article>
+  <footer> <small>&copy; mPhone</small> </footer>
+</div>
+</body>
+</html>

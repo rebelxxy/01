@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+
+article h2, article h1 {
+	font-size: 3.6em;
+	line-height: 1em;
+	margin: 25px 0;
+}
+
+.content {
+	/*border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+	color: #333;*/
+	height: 700px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+#top{
+	text-align:center;
+}
+#first {
+	background: url(../images/model01.png)  no-repeat fixed center;
+}
+
+#second {
+	background: url(../images/model02.png)  no-repeat fixed center;
+}
+
+#third {
+	background: url(../images/model03.png)  no-repeat fixed center;
+}
+
+
+
+/* section first */
+
+#first .text_area {
+	background: rgba(255, 255, 255, 0.9);
+	/*border: 1px solid rgba(150, 150, 150, 0.1);
+	box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.4);*/
+	padding: 18px;
+	margin:20px;
+	position: absolute;
+	top: 100px;
+	width: auto;
+}
+
+/* section second */
+
+#second .text_area  {
+	background: rgba(255, 255, 255, 0.9);
+	border: 1px solid rgba(150, 150, 150, 0.1);
+	box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.4);
+	padding: 18px;
+	margin:20px;
+	position: absolute;
+	top: 100px;
+	width: auto;
+}
+
+/* section third */
+#third .text_area {
+	background: rgba(255, 255, 255, 0.9);
+	border: 1px solid rgba(150, 150, 150, 0.1);
+	box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.4);
+	padding: 18px;
+	margin:20px;
+	position: absolute;
+	top: 100px;
+	width: auto;
+}
+
+/* section the end */
+#theend .text_area {
+	position:relative;
+	text-align:center;
+	top: 200px;
+	width: auto;
+}
+
+
